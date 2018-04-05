@@ -5,44 +5,10 @@
     <title>Camp-Ometer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
-    <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
   </head>
   <body>
     <input type="text" name="state" value="">
     <button type="button" name="button" onclick="clickedOn()">PARKS!</button>
-    <div id="map"></div>
-    <script type="text/javascript">
-    function initMap() {
-
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: {lat:0,lng:0}
-      });
-
-     for(var i = 0; i < 50; i++){
-        var marker = new google.maps.Marker({
-          position: {lat: i, lng: i},
-          map: map,
-          title: "Beer!",
-          animation: google.maps.Animation.DROP,
-        })
-      }
-
-      function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-        } else {
-          marker.setAnimation(google.maps.Animation.BOUNCE);
-        }
-      }
-    }
-    </script>
   </body>
   <script type="text/javascript" src="../static/js/main.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiLkusDOvNMzBFSYU94POBjvD8UNLcNs0&callback=initMap"></script>
 </html>

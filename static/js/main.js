@@ -5,10 +5,13 @@ function clickedOn(){
     return response.json();
   })
   .then(function(campgrounds){
-    var camps = []
+    var camps = [];
     for(let i of campgrounds.data){
       if (i.latLong !== "") {
-        camps.push(i.latLong)
+        camp = i.latLong.split(":")
+        let long = camp[1].split(",")[0]
+        let lat = camp[2].split("}")[0]
+        camps.push([long,lat])
       }
     }
     console.log(camps);
