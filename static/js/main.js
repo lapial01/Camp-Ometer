@@ -1,6 +1,6 @@
 function clickedOn(){
-  let state = document.querySelector("input")
-  fetch("/getparks?state="+state.value)
+  let state = document.getElementById("states").value
+  fetch("/getparks?state=" + state)
   .then(function(response){
     return response.json();
   })
