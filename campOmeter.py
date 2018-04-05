@@ -12,7 +12,7 @@ def index():
 @app.route("/getparks")
 def parksInState():
     state = request.args.get("state")
-    res = Response(requests.get("https://developer.nps.gov/api/v1/campgrounds?stateCode="+state+"&api_key=bap6bNqEedO9pto5PNzA42NrWgbMF5UnKER6QJGj").text)
+    res = Response(requests.get("https://developer.nps.gov/api/v1/campgrounds?stateCode=" + state + "&api_key=bap6bNqEedO9pto5PNzA42NrWgbMF5UnKER6QJGj").text)
     res.headers["Content-type"] = "application/json"
     return res
 
