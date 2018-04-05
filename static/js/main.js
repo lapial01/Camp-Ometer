@@ -4,7 +4,17 @@ function clickedOn(){
   .then(function(response){
     return response.json();
   })
-  .then(function(data){
-    console.log(data);
+  .then(function(campgrounds){
+    var camps = []
+    for(let i of campgrounds.data){
+      if (i.latLong !== "") {
+        camps.push(i.latLong)
+      }
+    }
+    console.log(camps);
   })
+}
+
+function clickedOnCamp() {
+  //
 }
