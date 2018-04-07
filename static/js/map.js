@@ -38,7 +38,17 @@ function plotMarkers(m){
       map: map,
       animation: google.maps.Animation.DROP
     })
-    let content = "Loan Number:  ";
+    let content = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">'+marker[0]+'</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>'+marker[0]+" "+marker[3]'</p>'+
+            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+            '</p>'+
+            '</div>'+
+            '</div>';
 
     let infowindow = new google.maps.InfoWindow()
 

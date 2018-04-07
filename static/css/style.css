@@ -8,18 +8,41 @@ body {
   background-image: url("../img/park.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: "Montserrat";
 }
 
-#menu {
-  padding-top: 70px;
+h1 {
+  font-size: 6em;
+  text-shadow: 3px 3px white;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+label {
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.item {
+  font-family: "Montserrat";
+}
+
+.second {
+  margin-top: 25em;
+}
+
+.third {
+  margin-top: 15em;
 }
 
 #map {
   height: 400px;
   width: 100%;
   border-radius: 2%;
-}
-
-label {
-  font-size: 1.5em;
 }

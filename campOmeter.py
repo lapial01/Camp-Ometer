@@ -8,6 +8,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/parks")
+def parks():
+    return render_template("parks.html")
+
 @app.route("/getparks")
 def parksInState():
     state = request.args.get("state")
