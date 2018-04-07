@@ -4,6 +4,12 @@ html, body {
   padding: 0;
 }
 
+body {
+  background-image: url("../img/park.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #menu {
   padding-top: 70px;
 }
