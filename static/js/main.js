@@ -12,20 +12,20 @@ function clickedOn(){
     for(let park of parks.data){
       let park_name = park.name,
           long_lat = park.latLong,
-          description = park.description;
+          description = park.description,
+          url = park.url;
       if (long_lat !== "" && park_name !== "") {
         let camp = park.latLong.split(":")
         let long = camp[1].split(",")[0];
         let lat = camp[2].split("}")[0];
-        all_parks.push([park_name,long,lat, description])
+        all_parks.push([park_name,long,lat, description, url])
       }
     }
-    console.log(all_parks);
-    // for (let camp of all_parks) {
-    //   let paragraph = document.createElement("p");
-    //   paragraph.textContent = camp[0]
-    //   document.body.appendChild(paragraph)
-    // }
   return all_parks})
   .then(plotMarkers)
+}
+
+function setTitle(elem){
+  let park_from_map = document.querySelector("#park_from_map")
+  park_from_map.textContent = elem
 }
