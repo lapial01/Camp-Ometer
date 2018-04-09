@@ -1,3 +1,8 @@
+let eachcard_title = document.querySelectorAll(".title"),
+  icons = document.querySelectorAll(".weather_icon"),
+  temps = document.querySelectorAll(".desc"),
+  allcards = document.querySelectorAll(".card");
+
 function getForecast(obj) {
     fetch("/getweather?lat=" + Math.round(obj.lat) + "&lon=" + Math.round(obj.lon)).then(function(response) {
         return response.json()
@@ -28,12 +33,6 @@ function displayCards() {
 }
 
 function populateCards(obj) {
-    let eachcard_title = document.querySelectorAll(".title")
-      , icons = document.querySelectorAll(".weather_icon")
-      , temps = document.querySelectorAll(".desc");
-
-    var allcards = document.querySelectorAll(".card");
-
     let i = 0, max = -50, chosen;
       for (let item in obj) {
         if (i<=Object.keys(obj).length) {
