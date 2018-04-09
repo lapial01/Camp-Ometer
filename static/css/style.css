@@ -29,6 +29,10 @@ label {
   font-weight: bold;
 }
 
+.desc{
+  color: white;
+}
+
 .item {
   font-family: "Montserrat";
 }
@@ -38,7 +42,7 @@ label {
 }
 
 .third {
-  margin-top: 15em;
+  margin-top: 7em;
 }
 
 #map {
