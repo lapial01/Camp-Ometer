@@ -5,7 +5,7 @@ Web application that uses the google maps API along with openweathermap to displ
 ## Installation
 
 * `git clone git@github.com:RafaelBroseghini/Park-Ometer.git`
-* run `python3 parkOmeter.py`
+* `python3 parkOmeter.py`
 
 ## Contributing
 
