@@ -6,6 +6,7 @@ display the forecast for the next five days at/around a National Park of the use
 ## Installation
 * *From the command line:*
   * `git clone git@github.com:RafaelBroseghini/Park-Ometer.git`
+  * `cd Park-Ometer`
   * `python3 parkOmeter.py`
 
 ## Contributing
