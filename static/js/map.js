@@ -39,7 +39,7 @@ function plotMarkers(m) {
         })
 
         let content = '<div class="info-window">' + '<h3 id="park_map">' + marker[0] + ' National Park.</h3>' + '<div class="bodyContent">' +
-        '<p style="color:black;font-size:12px;">' + marker[3] + '</p>' +
+        '<p style="color:black;font-size:12px;font-family:Montserrat">' + marker[3] + '</p>' +
         '<span id="coord" style="display:none;">{"lat": ' + marker[1] + ', "lon": ' + marker[2] + '}</span>' +
         '</div>' + '<div class="info-content">' + '<span> Web: ' + '<a href="' + marker[4] + '";font-size:10px;>' + marker[0] + '</a></span></p>' + '</div>' +
         '</div>'
