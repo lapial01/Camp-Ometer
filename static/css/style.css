@@ -9,6 +9,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Montserrat";
+    -webkit-transition: background-image 2s ease-in-out;
+    -moz-transition: background-image 2s ease-in-out;
+    -o-transition: background-image 2s ease-in-out;
+    transition: background-image 2s ease-in-out;
 }
 
 h1 {
