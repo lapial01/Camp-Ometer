@@ -1,18 +1,10 @@
-# Project Name
+# Park-Ometer
 
-TODO: Write a project description
+Web application that uses the google maps API along with openweathermap to display the best days to go visit a National Park of the user's choice
 
 ## Installation
 
-TODO: Describe the installation process
-
-## Usage
-
-TODO: Write usage instructions
-
-```r
-df <- data.frame(a=letters[1:10], b=1:10)
-```
+Clone this repository and run `python3 parkOmeter.py`
 
 ## Contributing
 
