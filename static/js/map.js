@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+let labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let labelIndex = 0;
 let map;
 let markers = [];
 function initMap() {
@@ -34,6 +36,7 @@ function plotMarkers(m) {
         let newMarker = new google.maps.Marker({
             position: position,
             title: marker[0] + " National Park",
+            label: labels[labelIndex++ % labels.length],
             map: map,
             animation: google.maps.Animation.DROP
         })
