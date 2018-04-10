@@ -53,4 +53,5 @@ label {
     height: 400px;
     width: 100%;
     border-radius: 2%;
+    box-shadow: 5px 5px grey;
 }
