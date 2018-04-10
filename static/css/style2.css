@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background: #151515;
+}
+
+.item {
+    font-family: "Montserrat";
+}
+
+.third {
+    margin-top: 17em;
+}
