@@ -15,3 +15,7 @@ body {
 .third {
     margin-top: 17em;
 }
+
+.ui.card {
+  box-shadow: 5px 5px grey;
+}
