@@ -12,6 +12,10 @@ def index():
 def parks():
     return render_template("parks.html")
 
+@app.route("/contact")
+def contac_us():
+    return render_template("contact.html")
+
 @app.route("/getparks")
 def parksInState():
     state = request.args.get("state")
