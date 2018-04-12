@@ -22,7 +22,8 @@ function initMap() {
             lat: 40,
             lng: -100
         },
-        zoom: 3
+        zoom: 3,
+        mapTypeId: 'satellite'
     });
 }
 
