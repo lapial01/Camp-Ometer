@@ -49,6 +49,10 @@ label {
     margin-top: 3em;
 }
 
+.circular.button {
+  float: right;
+}
+
 #map {
     height: 400px;
     width: 100%;
