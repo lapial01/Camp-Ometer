@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/park.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Montserrat";
+    -webkit-transition: background-image 2s ease-in-out;
+    -moz-transition: background-image 2s ease-in-out;
+    -o-transition: background-image 2s ease-in-out;
+    transition: background-image 2s ease-in-out;
+}
+
+h1 {
+    font-size: 6em;
+    text-shadow: 3px 3px white;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+label {
+    font-family: "Montserrat";
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.desc {
+    color: white;
+}
+
+.item {
+    font-family: "Montserrat";
+}
+
+.second {
+    margin-top: 25em;
+}
+
+.third {
+    margin-top: 3em;
+}
+
+.circular.button {
+  float: right;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 2%;
+    box-shadow: 5px 5px grey;
+}
